@@ -33,10 +33,10 @@
 
 .spinner {
     display: inline-block;
-    width: 200px;
-    height: 200px;
-    border: 10px solid blue;
-    border-top: 10px solid lightgray;
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    border: 10px solid #0075c7;
+    border-top: 10px solid #98d5ff;
     border-radius: 50%;
     position: absolute;
     animation-name: spin;
@@ -48,8 +48,4 @@
 @keyframes spin {
     0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-.display-none {
-    display: none;
 }

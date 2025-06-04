@@ -39,10 +39,10 @@
 
 .loader-box {
     text-align: center;
-    width: 10%;
-    font-size: 60px;
+    width: 9%;
+    margin-left: 0.2%;
+    font-size: 5rem;
     font-weight: bold;
-    letter-spacing: 5px;
     display: inline-block;
     animation-name: move;
     animation-duration: 4s;
@@ -93,8 +93,4 @@
 @keyframes move {
     0% { transform: rotateX(0deg); }
   100% { transform: rotateX(360deg); }
-}
-
-.display-none {
-    display: none;
 }
