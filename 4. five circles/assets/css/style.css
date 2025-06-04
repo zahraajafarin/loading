@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(40, 139, 197);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+    font-size: 70px;
+}
+
+/* -------------------------------loader start-----------------------------*/
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(155 188 222 / 50%);
+}
+
+.loader-box {
+    margin:0 5px;
+    display: inline-block;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation-name: move;
+    animation-duration: 2500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#loader-box-1 {
+    animation-delay: 0s;
+}
+
+#loader-box-2 {
+    animation-delay: 500ms;
+}
+
+#loader-box-3 {
+    animation-delay: 1000ms;
+}
+
+#loader-box-4 {
+    animation-delay: 1500ms;
+}
+
+#loader-box-5 {
+    animation-delay: 2000ms;
+}
+
+@keyframes move {
+    0% { background-color: white; }
+   50% { background-color: green; }
+  100% { background-color: white; }
+}
+
+.display-none {
+    display: none;
+}
