@@ -31,37 +31,58 @@
     background-color: rgb(155 188 222 / 50%);
 }
 
-.spinner-box {
+.clock {
     display: inline-block;
     width: 10%;
     aspect-ratio: 1 / 1;
+    border: 5px solid #000;
+    background-color: #e0edf5;
     border-radius: 50%;
-    position: absolute;
-    animation-name: spin;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    position: relative;
 }
 
-.spinner {
-    content: "";
-    box-sizing: border-box;
+.hour-hand {
+    z-index: 3;
     position: absolute;
-    inset: 0px;
+    display: inline-block;
+    width: 3px;
+    height: 25%;
+    background-color: #000;
+    color: #000;
+    left: calc(50% - 1.5px);
+    top: 25%;
+    transform-origin: bottom;
+    animation: spin 5s linear 0s infinite;
+}
+
+.minute-hand {
+    z-index: 2;
+    position: absolute;
+    display: inline-block;
+    width: 3px;
+    height: 40%;
+    background-color: #be0000;
+    color: #be0000;
+    left: calc(50% - 1.5px);
+    top: 10%;
+    transform-origin: bottom;
+    animation: spin 2s linear 0s infinite;
+}
+
+.dot {
+    z-index: 4;
+    position: absolute;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    color: #000;
     border-radius: 50%;
-    border: 5px solid #0075c7;
-    animation: prixClipFix 2s linear infinite ;
+    left: calc(50% - 3px);
+    top: calc(50% - 3px);
 }
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
-
-@keyframes prixClipFix {
-    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
-    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
-    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
-    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
-    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }
