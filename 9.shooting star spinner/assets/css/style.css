@@ -30,3 +30,15 @@
     position: absolute;
     background-color: rgb(155 188 222 / 50%);
 }
+
+.circle {
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    text-indent: -9999em;
+    top: 50%;
+    transform: translateZ(0);
+    animation: spinner 2s linear 0s infinite;
+}
