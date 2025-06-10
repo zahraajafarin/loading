@@ -16,6 +16,7 @@ width="200"
 src="https://raw.githubusercontent.com/zahraajafarin/loading/main/gifs/02.orangebox.gif"
 alt="02. orange box"
 width="200"
+align="center"
 />
 
 ### 03. word
