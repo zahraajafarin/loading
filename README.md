@@ -2,12 +2,13 @@
 
 ### 01. Simple
 
+<div style="text-align: center;">
 <img 
 src="https://raw.githubusercontent.com/zahraajafarin/loading/main/gifs/01.simple.gif"
 alt="01. Simple"
 width="200"
-style="display: block; margin: 0 auto;"
 />
+</div>
 
 ### 02. orange box
 
