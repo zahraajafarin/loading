@@ -1,4 +1,9 @@
 # loading
 
 ### 01. Simple
-![Loading Animation](https://raw.githubusercontent.com/zahraajafarin/loading/main/gifs/01.simple.gif)
+
+<img 
+src="https://raw.githubusercontent.com/zahraajafarin/loading/main/gifs/01.simple.gif"
+alt="01. Simple"
+width="200"
+/>
