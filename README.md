@@ -2,7 +2,7 @@
 
 ### 01. Simple
 
-<div alig="center">
+<div align="center">
 <img 
 src="https://raw.githubusercontent.com/zahraajafarin/loading/main/gifs/01.simple.gif"
 alt="01. Simple"
